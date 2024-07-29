@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummigram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./images/cooking.png" rel="icon" />
+  </head>
+
+  <body id="body" onload="landing(0)">
+    <div class="cover" id="cover"> </div>
+    <!-- <div class="container-xxl m-0 p-0 cntr"> -->
+    <div class="loaderparent" id="loader">
+      <div class="loader"></div>
+      <div class="loadertext" id="lp"></div>
+    </div>
+
+    <ul class="nav" id="nav" >
+      <span onclick="gohome()">Yummigram</span>
+      <li class="ff"><input  type="search" id="sp" onfocus="searchfocus()" onkeyup="searchrecipe()"  placeholder=""></li>
+      <li><a href="#" class="active" onclick="gohome()" id="home">Home</a></li>
+      <li><a href="#" onclick="showcat()" id="dishes">Category</a></li>
+      <li id="showdishes"></li>
+      <li><a href="#" id="quick" onclick="quick()">Quick Ones</a></li>
+      <li id="_quick"></li>
+    </ul>
+
+    <div class="parent" id="parent">
+      <!-- <div> 
+            <img src="./images/food.png">
+            <p class="c_head">LOREM IPSUM</p>
+            <p class="c_tags">LOREM IPSUM</p>   
+        </div>  -->
+    </div>
+<div class="if" id="if"></div>
+
+<div class="notify" id="notify">
+ <img id="notify-img" src="./images/1.gif"> 
+ 
+<p>Welcome to Yummigram! 🍴✨</p>
+ 
+ <button onclick="landing(1)">Let's Make Deliciousness</button></div>
+    <!-- </div> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
